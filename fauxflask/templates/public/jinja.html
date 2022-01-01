@@ -5,11 +5,49 @@
 {% block main %}
 
 <div class="container">
-    <div class="row">
-        <div class="col">
+  <div class="row">
+    <div class="col">
 
-            <h1>Jinja Templates</h1>
-            <hr>
+      <h1>Jinja Templates</h1>
+      <hr>
+
+      <h4>Variables</h4>
+      <hr>
+      <p>{{ my_name }}</p>
+
+      <h4>Looping</h4>
+      <hr>
+      <ul>
+        {% for lang in langs %}
+        <li>{{ lang }}</li>
+
+
+        {% endfor %}
+      </ul>
+
+      <h4>Looping with Index</h4>
+      <hr>
+      <ul>
+        {% for lang in langs %}
+        <li>{{ loop.index }}: {{ lang }}</li>
+        {% endfor %}
+      </ul>
+
+      <h4>Looping a dict</h4>
+      <hr>
+      <ul>
+        {% for k, v in friends.items() %}
+        <li>{{ k }}:{{v}}</li>
+        {% endfor %}
+      </ul>
+
+      <h4>Looping dict keys</h4>
+      <hr>
+      <ul>
+        {% for k in friends.keys() %}
+        <li>{{ k }}</li>
+        {% endfor %}
+      </ul>
 
 
 
@@ -17,8 +55,10 @@
 
 
 
-        </div>
+
+
     </div>
+  </div>
 </div>
 
 
