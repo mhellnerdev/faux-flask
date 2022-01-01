@@ -1,9 +1,11 @@
 from fauxflask import app
 
+from flask import render_template
+
 
 @app.route("/")
 def index():
-    return "Interior Crocodile Alligator"
+    return render_template("public/index.html")
 
 
 @app.route("/about")
