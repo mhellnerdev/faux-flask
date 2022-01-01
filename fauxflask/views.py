@@ -45,7 +45,7 @@ def jinja():
             return f"Cloning into {self.url}"
 
     my_remote = GitRemote(
-        name='Flask Jija',
+        name='Flask Jinja',
         description='Template Design',
         url='https://github.com/mhellnerdev/faux-flask',
     )
