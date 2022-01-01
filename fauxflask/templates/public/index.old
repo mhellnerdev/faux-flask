@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+    <title>Fox Tooling Database</title>
+</head>
+
+<body>
+
+
+    <section id="navigation">
+
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="javascript:void(0)"><img class="nav-img"
+                        src="{{ url_for('static', filename='img/foxlogo.png') }}"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Tools</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">WIP</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Search">
+                        <button class="btn btn-primary" type="button">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+
+    <div class=header>
+        <h1>Fox Tooling Database</h1>
+    </div>
+
+    <div>
+        <p>Interior crocodile alligator
+            I drive a Chevrolet movie theater
+            Interior crocodile alligator
+            I drive a Chevrolet movie theater
+            Now, baby, I'm the ripper
+            Your baby daddy's worst nightmare
+            Catch me by the Clair, I'll be right there
+            Niggas copy everything we say
+            Louie frames, eyes lower than my GPA (Uh!)
+            Riding and swervin', kush, I'm blown
+            Doors wide, my trunk bump like Eddy Road (Haha)
+            I don't cake hoes, I never tip the stripper
+            I'm rich, bitch
+            But you can call me Cheap tha Ripper (Hahaha)
+            Shell toes, yes, Prps
+            There's a man riding a horse on top of my chest (Okay)
+            Polo fresh, I am ze man
+            I be slam dunking Tanqueray shots with LeBron (Haha)
+            Told niggas keep it Carmelo, okay?
+            Rolled past Dave, told him "Hello" and "Hey"
+            Me and Cash in something old on 23's, ho
+            Back window says "Mama mel bicho" (Haha)
+            Skateboarders grind, I grind, too
+            That's why you can catch me in DC shoes (Nigga)
+            I quit the team but believe I'm ballin'
+            Want a verse, put up a stack or quit calling (Haha)
+            30's on my Chevrolet, call me super duper (Ah)
+            Garage like Roots, I got more whips than Kunta (Haha)
+            Riviera sitting on the Bulls' best hooper
+            Y'all still riding 20's, y'all some Oompa Loompas (Woo!)
+            Doors swang on niggas that got bad behavior
+            My four 15's woke up the neighbors
+            Interior crocodile alligator
+            I drive a Chevrolet movie theater
+            Interior crocodile alligator
+            I drive a Chevrolet movie theater
+            Interior crocodile alligator
+            I drive a Chevrolet movie theater
+            Interior crocodile alligator
+            I drive a Chevrolet movie theater
+            Interior crocodile alligator
+            I drive a Chevrolet movie theater</p>
+    </div>
+</body>
+
+</html>
