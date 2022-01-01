@@ -10,4 +10,4 @@ def index():
 
 @app.route("/about")
 def about():
-    return "I drive a chevrolet movie theater"
+    return render_template("public/about.html")
