@@ -2,9 +2,16 @@ body {
     text-align: center;
 }
 
+li {
+    text-align: left;
+}
 
 .nav-img {
     height: 30px;
+}
+
+.sign_up {
+    text-align: left;
 }
 
 /* .navbar-spacing {
