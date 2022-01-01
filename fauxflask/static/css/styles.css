@@ -4,5 +4,9 @@ body {
 
 
 .nav-img {
-    width: 75px;
+    height: 30px;
+}
+
+.navbar-spacing {
+    height: 42px;
 }
