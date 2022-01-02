@@ -2,6 +2,13 @@ from fauxflask import app
 
 from flask import render_template, request, redirect
 
+from datetime import datetime
+
+
+@app.template_filter('clean_date')
+def clean_date(dt):
+    return dt.strftime("%d %b %Y")
+
 
 @app.route("/")
 def index():
@@ -53,7 +60,9 @@ def jinja():
     def repeat(x, qty):
         return x * qty
 
-    return render_template("public/jinja.html", my_name=my_name, age=age, langs=langs, friends=friends, colors=colors, cool=cool, GitRemote=GitRemote, repeat=repeat, my_remote=my_remote)
+    date = datetime.utcnow()
+
+    return render_template("public/jinja.html", my_name=my_name, age=age, langs=langs, friends=friends, colors=colors, cool=cool, GitRemote=GitRemote, repeat=repeat, my_remote=my_remote, date=date)
 
 
 @app.route("/about")
